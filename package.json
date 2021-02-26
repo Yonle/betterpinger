@@ -1,6 +1,6 @@
 {
   "name": "betterpinger",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A better solution for uptime by doing polling for server & client",
   "main": "./lib",
   "scripts": {

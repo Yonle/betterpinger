@@ -1,0 +1,28 @@
+{
+  "name": "betterpinger",
+  "version": "0.0.0",
+  "description": "A better solution for uptime by doing polling for server & client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yonle/betterpinger.git"
+  },
+  "keywords": [
+    "uptimerobot",
+    "pinger",
+    "keepalive"
+  ],
+  "author": "Yonle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yonle/betterpinger/issues"
+  },
+  "homepage": "https://github.com/Yonle/betterpinger#readme",
+  "dependencies": {
+    "http": "0.0.1-security",
+    "https": "^1.0.0"
+  }
+}

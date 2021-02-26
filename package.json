@@ -1,8 +1,8 @@
 {
   "name": "betterpinger",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A better solution for uptime by doing polling for server & client",
-  "main": "index.js",
+  "main": "./lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

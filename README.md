@@ -6,6 +6,7 @@ A better solution for uptime by doing polling for server & client.
 - [Docs](#docs)
   - [`core`](#core)
   - [`core.connect`](#coreconnect)
+  - [`core.connect` events](#coreconnectevemts)
 - [Example](#example)
 
 ## Installation
@@ -22,19 +23,24 @@ server.on("request", core);
 ```
 
 ### `core.connect`
-A function that connects to a server & communicate with `betterpinger` server. In this function, You need to provide some parameters so it works perfectly. They are:
+A function that connects to a server & communicate with your `betterpinger` server. In this function, You need to provide some parameters so it works perfectly. They are:
   - `hostname` [Required] for requesting to the provided hostname.
   - `port` for requesting to the different port of hostname.
   - `path` for requesting to the provided path.
   - `headers` for setting this client headers.
   - `protocol` for requesting in different protocol.
+## `core.connect` events
+- `connect` event will emitted when BetterPinger connected to your BetterPinger server.
+- `disconnect` event will emitted when BetterPinger disconnected from your BetterPinger Server.
 
 ## Example
 Server Example
 ```js
 const http = require("http");
 const betterpinger = require("betterpinger");
+
 http.createServer(betterpinger).listen(3000);
+
 ``` 
 Client Example
 ```js
@@ -45,7 +51,5 @@ connect({
 	port: 3000,	
 });
 ```
-# WARNING
-Using `core.connect` to non-betterping configured server, can lead you to some FATAL Result!!!
 ## Community
 [Discord](https://discord.gg/9S3ZCDR)
